@@ -1,0 +1,4 @@
+Questions:
+1. List all the files in the directory and count them.
+2. Check if file/dir exists and show size/content
+3. Create new dir and move a file into it
