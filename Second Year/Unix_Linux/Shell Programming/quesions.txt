@@ -6,3 +6,4 @@ Questions:
 5. Basic calculator
 6. Archive old file (older than X days)
 7. Print 1 to 100
+8. Factorial using loop
