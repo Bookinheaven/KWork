@@ -8,3 +8,4 @@ Questions:
 7. Print 1 to 100
 8. Factorial using loop
 9. To uppercase/lowercase
+10. Palindrome
