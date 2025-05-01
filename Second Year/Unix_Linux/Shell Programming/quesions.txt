@@ -11,3 +11,4 @@ Questions:
 10. Palindrome
 11. Compress and extract functions
 12. Simple Backup
+13. Handle User Authentication
