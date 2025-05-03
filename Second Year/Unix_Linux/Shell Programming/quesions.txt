@@ -12,3 +12,4 @@ Questions:
 11. Compress and extract functions
 12. Simple Backup
 13. Handle User Authentication
+14. List all files with size and modified date
