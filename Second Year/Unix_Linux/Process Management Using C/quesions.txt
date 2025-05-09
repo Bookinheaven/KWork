@@ -2,3 +2,4 @@ Basics
 1. Basic Process Creation
 2. Process Replacement
 3. Mutiple Process
+4. Wait() and Exit() functions.
