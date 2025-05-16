@@ -4,3 +4,4 @@ Basics
 3. Mutiple Process
 4. Wait() and Exit() functions.
 5. Unnamed Pipes for interprocess communications.
+6. named Pipes (FIFO) for interprocess communications.
