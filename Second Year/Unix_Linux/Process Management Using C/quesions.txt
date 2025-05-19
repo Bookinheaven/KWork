@@ -6,3 +6,4 @@ Basics
 5. Unnamed Pipes for interprocess communications.
 6. named Pipes (FIFO) for interprocess communications.
 7.1 Zombie 
+7.2 Orphan Processes
