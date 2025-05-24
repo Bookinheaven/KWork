@@ -9,3 +9,4 @@ Basics
 7.2 Orphan Processes
 8. Virtual memory allocation
 9. Chunk Transfer using Unnamed pipes
+10. Shared resourcs using Semaphore
