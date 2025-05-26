@@ -10,3 +10,4 @@ Basics
 8. Virtual memory allocation
 9. Chunk Transfer using Unnamed pipes
 10. Shared resourcs using Semaphore
+11. Reader-Writer using Shared Memory
