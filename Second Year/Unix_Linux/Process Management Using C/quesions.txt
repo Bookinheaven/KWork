@@ -13,3 +13,6 @@ Basics
 11. Reader-Writer using Shared Memory
 12. Producer-Consumer usign shared memory and semaphore
 13. Dining Philosopher problem
+
+CPU Scheduling Algorithms
+1. FCFS
