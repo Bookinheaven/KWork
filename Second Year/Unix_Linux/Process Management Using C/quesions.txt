@@ -16,3 +16,12 @@ Basics
 
 CPU Scheduling Algorithms
 1. FCFS
+2. SJF
+3. Priority 
+4. Round Robin
+
+Disk scheduling
+1. FCFS
+2. SSTF
+3. SCAN
+4. LOOK
