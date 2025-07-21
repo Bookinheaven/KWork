@@ -1,97 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Programming Language Overview</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Language Overview</title>
+    <style>
+        th, td {
+            border: 1px solid rgb(253, 253, 253);
+            padding: 1rem;
+          }
+    </style>
 </head>
-<body>
+<body style="font-family: Arial, Helvetica, sans-serif;background-color: rgb(37, 37, 37); color: white;">
+    <header>
+        <h1 style="text-align: center;">Programming Language Overview</h1>
+        <p style="text-align: end;">Learn more, explore more</p>
+        <hr>
+    </header>
 
-  <header>
-    <h1>Programming Language Overview</h1>
-    <p>Explore the world of coding languages!</p>
-  </header>
+    <main>
+        <section id="Home">
+            <h2>Why are we here?</h2>
+            <p>
+                You might be thinking that programming is <strong>SUPER COMPLEX</strong>, filled with <i>cryptic code</i> 
+                that only wizards can understand, but it's really just like being the chef in a 
+                <u>very particular restaurant</u>. You give the computer step-by-step instructions <sub>(the recipe)</sub>, 
+                and it cooks up whatever you want, as long as your instructions are crystal clear and don't involve 
+                any <strong>"a pinch of this, a dash of that"</strong> ambiguity.
+                And if your program doesn't work, it's probably because you accidentally told the computer to put 
+                pineapple on the pizza. Again. Don't worry, even seasoned chefs burn the occasional dish.
+            </p>
 
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Languages</a></li>
-      <li><a href="#">Resources</a></li>
-    </ul>
-  </nav>
+            <div style="display: flex; justify-content: space-evenly;">
+                <a target="_blank" href="https://www.google.com/search?q=programming+language">
+                    <img src="https://bairesdev.mo.cloudinary.net/blog/2022/01/programming-languages-1.jpg" 
+                         alt="Programming languages image" width="400" height="300">
+                </a>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS4D0JCyqWG4QIPifIzGIWvgKXQG9senferA&s" 
+                     alt="Programming visual 1" width="400" height="300">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGNsMsHAZq0Ahqv1-1lwgYYUBJ2rBh5rARVA&s" 
+                     alt="Programming visual 2" width="400" height="300">
+                <img src="https://blog.sagipl.com/wp-content/uploads/2017/08/top-programming-language-2017.jpg" 
+                     alt="Programming visual 3" width="400" height="300">    
+            </div>
 
-  <section>
-    <h2>What is a Programming Language?</h2>
-    <p>A programming language is a formal language comprising a set of instructions that produce various kinds of output. They are used to implement algorithms and control the behavior of a machine.</p>
+            <p>Some of the top programming languages and their specializations:</p>
+            <table style="border: 1px solid rgb(255, 255, 255); width: 100%; border-spacing: 0;">
+                <thead>
+                    <tr>
+                        <th>Language</th>
+                        <th>Specializations</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Python</td>
+                        <td>Web development (backend), Data Science, AI/Machine Learning, Scripting, Automation</td>
+                        <td>Popular for its readability and versatility, used in various fields including scientific computing and game development.</td>
+                    </tr>
+                    <tr>
+                        <td>Java</td>
+                        <td>Enterprise Applications, Android Development, Big Data, Cloud-based Services</td>
+                        <td>Robust, object-oriented, used extensively in large-scale systems and Android apps.</td>
+                    </tr>
+                    <tr>
+                        <td>C#</td>
+                        <td>Windows Applications, Game Development (Unity), Web Services, Enterprise Software</td>
+                        <td>Microsoft-developed, used for various applications, especially within the .NET framework, including mobile apps with Xamarin.</td>
+                    </tr>
+                    <tr>
+                        <td>Go (Golang)</td>
+                        <td>Web Services, APIs, Cloud-native Applications, Concurrency</td>
+                        <td>Developed by Google, focuses on simplicity, efficiency, and concurrency, ideal for scalable systems and microservices.</td>
+                    </tr>
+                    <tr>
+                        <td>SQL</td>
+                        <td>Database Management, Data Retrieval and Manipulation</td>
+                        <td>Standard language for interacting with relational databases, crucial for data analysis and business intelligence.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-    <img src="https://media.bevopr.io/hubfs/TimelineOfProgrammingLanguages.png" alt="Programming Language Timeline" width="500">
-  </section>
+        <section id="Main">
+            <h2>Want a roadmap?</h2>
+            <p>
+                A "roadmap" is a high-level strategic document that outlines the vision, goals, key initiatives, and 
+                planned direction of a product or project over a specific timeframe. Think of it like a GPS for your 
+                coding adventure, showing you the major cities and milestones you'll hit, rather than every single street and turn.
+            </p>
+            <p>
+                Here is one of the most popular roadmap websites: 
+                <a href="https://roadmap.sh/" target="_blank">Roadmap.sh</a>
+            </p>
 
-  <section>
-    <h2>Top 5 Programming Languages (2025)</h2>
-    <ol>
-      <li>Python</li>
-      <li>JavaScript</li>
-      <li>Java</li>
-      <li>C++</li>
-      <li>Go</li>
-    </ol>
-  </section>
+            <h2>How to plan our programming path?</h2>
+            <p>
+                You don't need a clear path at the beginning. Just <strong>START</strong> with a small idea or project. Learn through it, copy-paste code—it's fine—but understand each line. 
+                Ask questions, even on simple things. It deepens understanding and clears your thinking. 
+                Avoid jumping from one tutorial to another—that's a common mistake (even I did it).
+            </p>
 
-  <section>
-    <h2>Types of Programming Languages</h2>
-    <ul>
-      <li>Procedural</li>
-      <li>Object-Oriented</li>
-      <li>Functional</li>
-      <li>Scripting</li>
-      <li>Logic</li>
-    </ul>
-  </section>
+            <p>Let’s check one of the fields I’m familiar with:</p>
+            <p>Want a fun break? Play this audio clip:</p>
+            <audio src="./audio.wav" controls>Your browser does not support the audio element.</audio>            
+            <h3 style="font-size: 1.5rem;">Web Development</h3>
+            <ul style="font-size: 1.1rem;">
 
-  <section>
-    <h2>Language Comparison Table</h2>
-    <table border="1">
-      <thead>
-        <tr>
-          <th>Language</th>
-          <th>Paradigm</th>
-          <th>Use Case</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Python</td>
-          <td>Object-Oriented, Scripting</td>
-          <td>Web, AI, Automation</td>
-        </tr>
-        <tr>
-          <td>Java</td>
-          <td>Object-Oriented</td>
-          <td>Enterprise Applications</td>
-        </tr>
-        <tr>
-          <td>C</td>
-          <td>Procedural</td>
-          <td>System Programming</td>
-        </tr>
-        <tr>
-          <td>JavaScript</td>
-          <td>Scripting</td>
-          <td>Web Development</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
+                <li>Basic Requirements
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </li>
+                <li>Later
+                    <ul>
+                        <li>React.js (Frontend)</li>
+                        <li>Express.js (Backend)</li>
+                        <li>MongoDB (Database)</li>
+                    </ul>
+                </li>
+            </ul>
 
-  <section>
-    <h2>Learn More</h2>
-    <p>Explore more using the following resources:</p>
-    <ul>
-      <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN JavaScript Guide</a></li>
-      <li><a href="https://www.learnpython.org/" target="_blank">Learn Python</a></li>
-      <li><a href="https://java.com/en/" target="_blank">Official Java Website</a></li>
-    </ul>
-  </section>
+            <p>
+                With this, you'll complete the basics. You can later explore networking, authentication, state management, and more.
+                It may feel overwhelming at first—BUT trust me, IT'S WORTH IT.
+            </p>
 
+            <h3>Refer this video:</h3>
+            <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/cKDZUpBwwNg?si=C0KejlbqNaDIhB5Z" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <nav>
+            <a href="#Home">Home</a> |
+            <a href="#Main">Roadmap</a>
+        </nav>
+        <p>All rights reserved by BurnKnuckle</p>
+    </footer>
 </body>
 </html>
