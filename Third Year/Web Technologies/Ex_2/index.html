@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Overview of Programming Languages</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    header img {
+      float: left;
+      margin-right: 20px;
+    }
+
+    header h1 {
+      margin-top: 60px;
+    }
+
+    nav {
+      clear: both;
+      padding: 10px;
+      background-color: #ddd;
+    }
+
+    nav a {
+      margin-right: 80px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .search-box {
+      padding: 5px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 30px;
+    }
+
+    .skills, .video-audio {
+      flex: 1 1 45%;
+      margin-bottom: 30px;
+    }
+
+    .skills p {
+      margin: 5px 0 2px;
+    }
+
+    form {
+      margin-top: 30px;
+    }
+
+    fieldset {
+      padding: 20px;
+      border: 2px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-wrapper {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      margin-top: 10px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    .media-section, .map-section {
+      margin: 40px 30px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f1f1f1;
+      border-top: 2px solid #ccc;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header style="margin-bottom: 2rem;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Dennis_Ritchie_2011.jpg" width="150" height="150" alt="Dennis Ritchie">
+    <h1>Dennis Ritchie</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#languages">Languages</a>
+    <a href="#resources">Resources</a>
+    <input type="search" placeholder="Search..." class="search-box">
+  </nav>
+
+  <!-- Skills and Video Section -->
+  <div class="container">
+    <div class="skills">
+      <h2>Proficiency Levels</h2>
+      <p>HTML</p>
+      <progress value="98" max="100"></progress>
+      <p>CSS</p>
+      <progress value="90" max="100"></progress>
+      <p>JavaScript</p>
+      <progress value="70" max="100"></progress>
+      <p>Python</p>
+      <progress value="91" max="100"></progress>
+    </div>
+
+    <div class="video-audio">
+      <h2>Intro Video & Audio</h2>
+      <video width="100%" height="240" controls>
+        <source src="./media/sample-video.mp4" type="video/mp4">
+      </video>
+      <br><br>
+      <audio controls>
+        <source src="./media/sample-audio.mp3" type="audio/mp3">
+      </audio>
+    </div>
+  </div>
+
+  <!-- Forms Section -->
+  <div class="form-wrapper" id="languages">
+    <form action="#" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Language Information</legend>
+        <label for="langname">Language Name</label>
+        <input type="text" name="langname" placeholder="e.g., Python" required>
+
+        <label for="typed">Type</label>
+        <input type="text" name="typed" placeholder="e.g., Interpreted" required>
+
+        <label for="paradigm">Paradigm</label>
+        <input type="text" name="paradigm" placeholder="e.g., OOP, Functional" required>
+
+        <label for="creator">Creator</label>
+        <input type="text" name="creator" placeholder="e.g., Guido van Rossum" required>
+
+        <label for="released">First Released</label>
+        <input type="date" name="released" required>
+
+        <label for="color">Theme Color</label>
+        <input type="color" name="color" required>
+
+        <label for="photo">Upload Logo</label>
+        <input type="file" name="photo" required>
+      </fieldset>
+    </form>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Usage Details</legend>
+        <label for="uses">Common Uses</label>
+        <textarea name="uses" placeholder="e.g., Web development, AI..." required></textarea>
+
+        <label for="platform">Platform</label>
+        <select name="platform" required>
+          <option value="">Select</option>
+          <option>Web</option>
+          <option>Desktop</option>
+          <option>Mobile</option>
+          <option>Embedded</option>
+        </select>
+
+        <label for="difficulty">Learning Curve</label>
+        <input type="text" name="difficulty" placeholder="e.g., Beginner" required>
+
+        <label for="url">Official Website</label>
+        <input type="url" name="url" required>
+
+        <input type="checkbox" required> I confirm the above info<br><br>
+        <input type="submit" value="Save Language Info">
+      </fieldset>
+    </form>
+  </div>
+
+  <!-- Resources Section -->
+  <section id="resources" class="media-section">
+    <h2>Reference PDF</h2>
+    <iframe src="https://www.mcemotihari.ac.in/wp-content/uploads/2019/11/file_5dc2a70005960.pdf" width="100%" height="300px"></iframe>
+  </section>
+
+  <section class="map-section">
+    <h2>Map Location</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24207.033234373488!2d-74.420247!3d40.67663155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3babd801f568f%3A0x299157173a541ca2!2sBerkeley%20Heights%2C%20NJ%2C%20USA!5e0!3m2!1sen!2sin!4v1753840200482!5m2!1sen!2sin" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" ></iframe>  
+    </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025. URK23CS1261 - Web Technology Lab Batch 5.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Concepts Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="header">
+    <h1 class="relative-badge">CSS Concepts Showcase</h1>
+  </div>
+
+  <!-- Horizontal Navigation -->
+  <nav class="horizontal-nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Topics</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Vertical Navigation -->
+  <aside class="vertical-nav">
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <section class="content" style="margin-left: 170px;">
+    <div class="card">
+      <h3>CSS Basics</h3>
+      <p>This section explains CSS layout properties.</p>
+      <p class="highlight">This is an example of a class selector.</p>
+    </div>
+
+    <div class="card">
+      <h2>Combinators</h2>
+      <p>This paragraph is a general sibling after the h2.</p>
+      <p>This one too!</p>
+    </div>
+
+    <div class="card">
+      <h3>List Example</h3>
+      <ul>
+        <li>First item (styled using :first-child)</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Input Focus</h3>
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Focus me to see effect" />
+    </div>
+  </section>
+
+  <!-- Fixed Box -->
+  <div class="fixed-box">
+    I'm fixed!
+  </div>
+</body>
+</html>
