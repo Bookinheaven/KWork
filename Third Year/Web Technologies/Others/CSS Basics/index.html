@@ -3,66 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Concepts Demo</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>CSS</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <div class="header">
-    <h1 class="relative-badge">CSS Concepts Showcase</h1>
+  <!-- Universal selector, background-color, horizontal navigation, list nav -->
+  <header>
+    <nav class="horizontal-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>CSS DEMOOOO</h1>
+  </header>
+
+  <!-- background image, background-position, background-size -->
+  <section class="hero-section">
+    <h2>Welcome to My Page</h2>
+  </section>
+
+  <!-- class selector, padding, border, line-height -->
+  <section class="content-section box">
+    <h3>About This Page</h3>
+    <p>This page demonstrates various CSS topics practically. Each section is styled uniquely.</p>
+    <p class="highlight">Notice the line height and padding applied to paragraphs.</p>
+  </section>
+
+  <!-- descendant combinator, child combinator -->
+  <div class="parent">
+    <p>This is a parent paragraph.</p>
+    <span>This span is a descendant.</span>
+    <div>
+      <span>This is a nested span.</span>
+    </div>
   </div>
 
-  <!-- Horizontal Navigation -->
-  <nav class="horizontal-nav">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Topics</a></li>
-      <li><a href="#">About</a></li>
-    </ul>
-  </nav>
+  <!-- focus pseudo-class -->
+  <form>
+    <input type="text" placeholder="Focus me!" />
+  </form>
 
-  <!-- Vertical Navigation -->
-  <aside class="vertical-nav">
+  <!-- vertical navigation -->
+  <aside class="sidebar">
     <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
+      <li>Menu 1</li>
+      <li>Menu 2</li>
+      <li>Menu 3</li>
     </ul>
   </aside>
 
-  <!-- Main Content -->
-  <section class="content" style="margin-left: 170px;">
-    <div class="card">
-      <h3>CSS Basics</h3>
-      <p>This section explains CSS layout properties.</p>
-      <p class="highlight">This is an example of a class selector.</p>
-    </div>
+  <!-- general sibling combinator -->
+  <h3>Note:</h3>
+  <p>This paragraph is styled using general sibling (~) selector.</p>
 
-    <div class="card">
-      <h2>Combinators</h2>
-      <p>This paragraph is a general sibling after the h2.</p>
-      <p>This one too!</p>
-    </div>
+  <!-- first-child pseudo -->
+  <ul>
+    <li>First item</li>
+    <li>Second item</li>
+  </ul>
 
-    <div class="card">
-      <h3>List Example</h3>
-      <ul>
-        <li>First item (styled using :first-child)</li>
-        <li>Second item</li>
-        <li>Third item</li>
-      </ul>
-    </div>
+  <!-- position: relative -->
+  <div class="relative-box">I am relatively positioned</div>
 
-    <div class="card">
-      <h3>Input Focus</h3>
-      <label for="name">Name:</label>
-      <input type="text" id="name" placeholder="Focus me to see effect" />
-    </div>
-  </section>
+  <!-- fixed position -->
+  <footer class="fixed-footer">Fixed Footer</footer>
 
-  <!-- Fixed Box -->
-  <div class="fixed-box">
-    I'm fixed!
-  </div>
 </body>
 </html>

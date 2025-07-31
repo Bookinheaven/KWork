@@ -1,122 +1,97 @@
+/* External CSS */
+* {
+  margin: 0;
+  padding: 0;
+}
 
-/* 2. External CSS */
+body {
+  font-family: Arial, sans-serif;
+}
 
-/* 1. Universal Selector */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+.horizontal-nav ul {
+  list-style: none;
+  background-color: #333;
+  text-align: center;
+}
 
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6; /* 3. line-height */
-      background-color: #f0f8ff; /* 4. background-color */
-      padding: 20px;
-    }
+.horizontal-nav li {
+  display: inline-block;
+  margin: 10px;
+}
 
-    /* 5. Navigation Bar Using List (Horizontal Navigation) */
-    nav.horizontal-nav ul {
-      list-style: none;
-      display: flex; /* Horizontal */
-      background-color: #333;
-      padding: 10px;
-    }
+.horizontal-nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+}
 
-    nav.horizontal-nav li {
-      margin-right: 15px;
-    }
+.hero-section {
+  background-image: url('https://via.placeholder.com/1200x300');
+  background-size: cover;
+  background-position: top right;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
 
-    nav.horizontal-nav a {
-      color: white; /* 6. color */
-      text-decoration: none;
-      padding: 8px 12px;
-    }
+.box {
+  padding: 20px;
+  border: 2px solid #444;
+  margin: 20px;
+  line-height: 1.6;
+}
 
-    nav.horizontal-nav a:hover {
-      background-color: #555;
-    }
+.highlight {
+  color: darkred;
+}
 
-    /* 7. Vertical Navigation */
-    .vertical-nav {
-      width: 150px;
-      float: left;
-      margin-top: 20px;
-    }
+.parent span {
+  color: green;
+}
 
-    .vertical-nav ul {
-      list-style: none;
-      background-color: #ddd;
-      padding: 10px;
-    }
+.parent > p {
+  font-weight: bold;
+}
 
-    .vertical-nav li {
-      margin: 10px 0;
-    }
+input:focus {
+  border: 2px solid blue;
+  outline: none;
+}
 
-    /* 8. background-position and background-size */
-    .header {
-      height: 200px;
-      background-image: url('https://picsum.photos/800/200');
-      background-position: right top; /* background-position */
-      background-size: cover;         /* background-size */
-      position: relative;
-    }
+.sidebar {
+  width: 200px;
+  background-color: #eee;
+  padding: 10px;
+}
 
-    /* 9. position: fixed */
-    .fixed-box {
-      position: fixed;
-      bottom: 10px;
-      right: 10px;
-      background-color: #f88;
-      padding: 10px;
-      border: 1px solid red;
-    }
+.sidebar ul li {
+  margin-bottom: 10px;
+}
 
-    /* 10. position: relative */
-    .relative-badge {
-      position: relative;
-      top: -10px;
-      left: 10px;
-      background-color: yellow;
-      padding: 3px;
-    }
+h3 ~ p {
+  color: purple;
+  font-style: italic;
+}
 
-    /* 11. border & padding */
-    .card {
-      border: 2px solid #999; /* border */
-      padding: 15px;          /* padding */
-      margin: 20px;
-    }
+ul li:first-child {
+  font-weight: bold;
+}
 
-    /* 12. descendant combinator */
-    .content p {
-      color: #444;
-    }
+.relative-box {
+  position: relative;
+  top: 10px;
+  left: 20px;
+  background-color: #fafafa;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
 
-    /* 13. child combinator */
-    .card > h3 {
-      color: darkgreen;
-    }
-
-    /* 14. general sibling combinator */
-    h2 ~ p {
-      font-style: italic;
-    }
-
-    /* 15. first-child pseudo-class */
-    ul li:first-child {
-      font-weight: bold;
-      color: darkblue;
-    }
-
-    /* 16. class selector */
-    .highlight {
-      background-color: #fffdcc;
-    }
-
-    /* 17. focus pseudo-class */
-    input:focus {
-      outline: 2px solid blue;
-      background-color: #e6f7ff;
-    }
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
