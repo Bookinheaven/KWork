@@ -1,0 +1,86 @@
+body {
+font-family: Arial, sans-serif;
+background-color: #f7f7f7;
+margin: 0;
+padding: 0;
+}
+header {
+background: grey;
+color: white;
+padding: 15px;
+text-align: center;
+font-size: 24px;
+font-weight: bold;
+}
+.cake-gallery {
+display: flex;
+justify-content: center;
+gap: 20px;
+
+
+padding: 20px;
+flex-wrap: wrap;
+}
+.cake-gallery img {
+width: 200px;
+height: 150px;
+border-radius: 8px;
+box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+.cake-gallery p {
+text-align: center;
+margin-top: 8px;
+font-weight: bold;
+}
+.order-box {
+max-width: 450px;
+margin: 20px auto;
+background: #fff;
+padding: 20px;
+border-radius: 12px;
+box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+h2 {
+text-align: center;
+color: black;
+margin-bottom: 15px;
+}
+label {
+font-weight: bold;
+display: block;
+margin-top: 10px;
+}
+input {
+width: 100%;
+padding: 10px;
+margin-top: 5px;
+border-radius: 6px;
+border: 1px solid #ccc;
+}
+button {
+margin-top: 15px;
+width: 100%;
+padding: 12px;
+border: none;
+background: grey;
+color: white;
+
+
+font-size: 16px;
+border-radius: 6px;
+cursor: pointer;
+}
+button:hover {
+background: darkgoldenrod;
+}
+.bill-box {
+text-align: center;
+margin-top: 20px;
+font-size: 18px;
+font-weight: bold;
+color: #006400;
+background: #e8ffe8;
+padding: 12px;
+border-radius: 8px;
+display: none;
+}

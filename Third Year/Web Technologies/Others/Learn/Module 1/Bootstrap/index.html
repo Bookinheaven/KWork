@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Experiments</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+      .bg-highlight { background-color: #f0f0f0; border: 1px solid #ccc; padding: 1rem; margin-top: 1rem; }
+      .col-content { background-color: #cfe2ff; border: 1px solid #9ec5fe; padding: 1rem; text-align: center; }
+    </style>
+  </head>
+  <body>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="script.js"></script>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Burn</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Page 1</a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+    <div class="table responsive">
+        <h1>Tables</h1>
+        <table class="table table-hover">
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>RAM</td>
+                <td>DOKEU</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container"> 
+        <div class="jumbotron">
+            <h1>Hey dude</h1>
+            <p>I know what u are doing!</p>
+        </div>
+        <h1>Alerts</h1>
+        <div class="alert alert-info">
+            Yes i knew it
+        </div>
+        <div class="alert alert-warning">
+            IDK
+        </div>
+        <div class="alert alert-danger">
+            I forgot
+        </div>
+        <div class="alert alert-success">
+            Found it
+        </div>
+    </div>
+
+    <div class="container bg-highlight">
+        <h5>.container (fixed width)</h5>
+        <p>This container has a max-width that changes at different screen sizes, leaving margins on the sides on larger screens.</p>
+    </div>
+
+    <div class="container-fluid bg-highlight">
+    <h5>.container-fluid (full width)</h5>
+    <p>This container is always 100% wide, spanning the entire width of the viewport.</p>
+    </div>
+
+    <table border="1" cellpadding="5" cellspacing="5" align="center" height="400" width="700">
+      <tr>
+        <th rowspan="3">Day</th>
+        <th colspan="3">Seminar</th>
+      </tr>
+      <tr>
+        <th colspan="2">Schedule</th>
+        <th rowspan="2">Topic</th>
+      </tr>
+      <tr>
+        <th>Begin</th>
+        <th>End</th>
+      </tr>
+      <tr>
+      <td rowspan="2">Monday</td>
+      <td rowspan="2" bgcolor="orange">8:00 a.m.</td>
+      <td rowspan="2" bgcolor="blue">5:00 p.m.</td>
+      <td >Introduction to XML</td>
+      <tr><td >Validity: DTD and Relax NG</td>
+
+      <tr>
+      <td rowspan="3">Tuesday</td>
+      <td bgcolor="orange">8:00 a.m.</td>
+      <td bgcolor="orange">11:00 a.m.</td>
+      <td >XPath</td><tr>
+      <td bgcolor="orange">11:00 a.m.</td>
+      <td bgcolor="green"> 2:00 p.m.</td>
+      <td rowspan="2"> XSL Transformatics</td>
+      <tr><td bgcolor="green">2:00 p.m.</td>
+      <td bgcolor="blue">5:00 p.m.</td>
+      </tr>
+
+      <tr>
+      <td>Wednesday</td>
+      <td bgcolor="orange">8:00 a.m.</td>
+      <td bgcolor="green">12:00 p.m.</td>
+      <td>XSL Formatting Objects</td>
+      </tr>
+
+    </table>
+
+    <table border="1" cellpadding="5" cellspacing="5" align="center" height="400" width="700">
+      <tr>
+        <th></th>
+        <th></th>
+        <th colspan="3">Morning</th>
+        <th>Lunch</th>
+        <th colspan="4">Afternoon</th>
+        <th colspan="3">Evening</th>
+      </tr>
+      <tr>
+        <th></th>
+        <th></th>
+        <th>9-10am</th>
+        <th>10-11am</th>
+        <th>11-12am</th>
+        <th>1-2pm</th>
+        <th>2-3pm</th>
+        <th>3-4pm</th>
+        <th>4-5pm</th>
+        <th>5-6pm</th>
+        <th>6-7pm</th>
+        <th>7-8pm</th>
+        <th>8-9pm</th>
+      </tr>
+      <tr>
+        <td rowspan="2">Work</td>
+        <td>Monday</td>
+        <td colspan="3">Development Meeting</td>
+        <td></td>
+        <td colspan="3">Client Meeting</td>
+        <td>Commute</td>
+        <td colspan="3">Free</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td colspan="3">in Office</td>
+        <td></td>
+        <td colspan="7">in Office</td>
+      </tr>
+    </table>
+    <div class="container-lg bg-highlight">
+    <h5>.container-lg (responsive)</h5>
+    <p>This container is 100% wide until the 'large' breakpoint (992px) is reached, at which point it behaves like a fixed .container.</p>
+    </div>
+    <div class="container bg-highlight">
+  <h5>Grid System Example</h5>
+  <div class="row">
+    <div class="col-lg col-md-2">
+      <div class="col-content">Column 1</div>
+    </div>
+    <div class="col-lg-3">
+      <div class="col-content">Column 2</div>
+    </div>
+    </div>
+  </div>
+</div>
+  <form id="form1">
+    <label for="name">Name</label>
+    <input id="name" name="name" type="text" placeholder="Name">
+
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" placeholder="Email">
+
+    <label for="pass">Password</label>
+    <input id="pass" name="pass" type="password">
+
+    <label for="c_pass">Confirm Password</label>
+    <input id="c_pass" name="c_pass" type="password">
+
+    <label for="age">Age</label>
+    <input id="age" name="age" type="number">
+
+    <label for="desc">Description</label>
+    <textarea id="desc" name="desc" rows="10"></textarea>
+
+    <input type="checkbox" id="ce" name="ce" style="display:inline">
+    <label for="ce" style="display:inline">Check here</label>
+
+    <input type="checkbox" id="ce2" name="ce" checked>
+    <label for="ce2" style="display:inline">Check here 2</label>
+
+
+    <input type="radio" id="re" name="re" style="display:inline">
+    <label for="re" style="display:inline">Check here</label>
+
+    <input type="radio" id="re2" name="re" checked>
+    <label for="re2" style="display:inline">Check here 2</label>
+    
+    <input type="color">
+    <input type="date">
+    <input type="datetime">
+    <input type="datetime-local">
+    <input type="file">
+    <input type="hidden">
+    <input type="image">
+    <input type="month">
+    <input type="range">
+    <input type="reset">
+    <input type="search">
+    <input type="tel">
+    <input type="week">
+    <input type="url">
+    <input type="time" >
+    <select>
+      <option value="da1">d1</option>
+      <option value="da2">d2</option>
+      <option value="da3">d3</option>
+    </select>
+    
+    <input type="submit" value="Submit">
+</form>
+  <button class="btn btn-success">D</button>
+  <button class="btn btn-danger">D</button>
+  <button class="btn btn-info">D</button>
+  <button class="btn btn-warning">D</button>
+  <table class="collapse">
+  <tr>
+    <td>One</td>
+    <td>Two</td>
+  </tr>
+  <tr>
+    <td>Three</td>
+    <td>Four</td>
+  </tr>
+</table>
+
+<style>
+  table.collapse, table.collapse td {
+    border: 2px solid black;
+  }
+  table.collapse {
+    border-collapse: collapse;
+  }
+</style>
+
+<table class="separate">
+  <tr>
+    <td>One</td>
+    <td>Two</td>
+  </tr>
+  <tr>
+    <td>Three</td>
+    <td>Four</td>
+  </tr>
+</table>
+
+<style>
+  table.separate, table.separate td {
+    border: 2px solid black;
+  }
+  table.separate {
+    border-collapse: separate;
+    border-spacing: 10px; /* works only with separate */
+  }
+</style>
+
+  </body>
+</html>

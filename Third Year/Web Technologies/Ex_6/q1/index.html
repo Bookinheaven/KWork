@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cake Shop</title>
+</head>
+<body>
+<header>CAKE SHOP</header>
+<div class="cake-gallery">
+<div>
+<img src="rainbow_cake.png" alt="Rainbow Cake">
+<p>Rainbow Cake – Rs. 300</p>
+</div>
+<div>
+<img src="chocolate_cake.png" alt="Chocolate Cake">
+<p>Chocolate Cake – Rs. 200</p>
+</div>
+<div>
+<img src="red_velvet_cake.png" alt="Red Velvet Cake">
+
+
+<p>Red Velvet Cake – Rs. 250</p>
+</div>
+<div>
+<img src="black_forest_cake.png" alt="Black Forest Cake">
+<p>Black Forest Cake – Rs. 350</p>
+</div>
+</div>
+<div class="order-box">
+<h2>Order Cake</h2>
+<label>Rainbow Cake (Quantity)</label>
+<input type="number" id="rainbow" value="0">
+<label>Chocolate Cake (Quantity)</label>
+<input type="number" id="chocolate" value="0">
+<label>Red Velvet Cake (Quantity)</label>
+<input type="number" id="redvelvet" value="0">
+<label>Black Forest Cake (Quantity)</label>
+<input type="number" id="blackforest" value="0">
+<button onclick="calculateBill()">Place Order</button>
+<div class="bill-box" id="billBox">
+Purchase Order Bill!!! <br>
+Total Price: <span id="totalPrice">Rs. 0</span>
+</div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
